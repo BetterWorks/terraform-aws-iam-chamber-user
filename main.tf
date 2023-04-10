@@ -19,7 +19,7 @@ data "aws_iam_policy_document" "default" {
 }
 
 module "chamber_user" {
-  source        = "git::https://github.com/betterworks/terraform-aws-iam-system-user.git?ref=tf-upgrade"
+  source        = "git::https://github.com/betterworks/terraform-aws-iam-system-user.git?ref=tags/1.0.0-terraform-1"
   namespace     = var.namespace
   stage         = var.stage
   name          = var.name
